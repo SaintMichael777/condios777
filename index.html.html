@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PasajeFácil – Reserva tus vuelos en minutos</title>
+
+  <!-- Fuente Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fffdf0;      /* fondo beige claro */
+      --main: #264653;    /* azul–gris profundo */
+      --accent: #ff7f51;  /* coral */
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 3rem 2.5rem;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      max-width: 340px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--main);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .subtitle, .price, .per { color: var(--main); }
+
+    .subtitle { font-size: 1rem; margin-bottom: 1.5rem; }
+
+    .price { font-size: 1.55rem; font-weight: 600; margin-bottom: 0.25rem; }
+
+    .per { margin-bottom: 2rem; }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 0.9rem 1.8rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.25s ease;
+    }
+    .btn:hover { transform: scale(1.05); }
+  </style>
+
+  <!-- Google Ads – Global site tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17270967163"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}  
+    gtag('js', new Date());
+    gtag('config', 'AW-17270967163');
+
+    function gtag_report_conversion(url) {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17270967163/TGJlC0K7QOq2EpWuWtKa',
+          'value': 1.0,
+          'currency': 'COP'
+      });
+      if (typeof url !== 'undefined') { window.location = url; }
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>PasajeFácil</h1>
+    <p class="subtitle">Viaja por Colombia de forma sencilla y transparente.</p>
+    <p class="price">Desde $49.900</p>
+    <p class="per">por trayecto</p>
+    <a href="https://wa.me/573001234567" onclick="return gtag_report_conversion('https://wa.me/573001234567');" class="btn">¡COMPRA YA!</a>
+  </div>
+</body>
+</html>
